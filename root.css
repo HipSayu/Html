@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans serif;
+}
 :root{
     --primary-Color : #f05123;
     --text-color: #333;
-    --font-root : 'Times New Roman', Times, serif;
+    --font-root : 'Poppins', sans serif;
     --white-color : #fff;
     --color-Shadow :#719ECE;
     --color-boder : #9492923a;
     --color-iconNabar : #b7b7b7;
+    
+
 }
+
 html, body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
