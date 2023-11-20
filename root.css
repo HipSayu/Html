@@ -36,7 +36,9 @@ body{
     position: relative;
 }
 
-
+.pageSelected{
+    color: #0b78ec;
+}
 .btn{
     font-size: 0.9rem;
     background-color:var(--primary-Color);
