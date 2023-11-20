@@ -54,25 +54,7 @@
     align-items: center;
     position: relative;
  }
- .header__container_Cart{
-     position: relative;
-     margin-right: 50px;
-     font-size: 1.5rem;
-     color: var(--white-color);
- }
- .header__container_Cart--icon::after{
-     content: '4';
-     position: absolute;
-     font-size: 0.7rem;
-     color: var(--primary-Color);
-     width: 10px;
-     padding: 2px;
-     height: 10px;
-     border-radius: 50%;
-     left: 20px;
-     background-color:var(--color-Shadow);
-     top: -5px;
- }
+
  
  .header__container_Access--image{
      border-radius: 50%;
@@ -125,6 +107,166 @@
      font-size: 1.1rem;
      cursor: pointer;
  }
+
+.header__container_Cart{
+    position: relative;
+    margin-right: 50px;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+.header__container_Cart:hover .header__container_Cart__description {
+    display: flex;
+}
+.header__container_Cart--icon::after{
+    content: '4';
+    position: absolute;
+    font-size: 1rem;
+    color: var(--primary-Color);
+    width: 15px;
+    padding: 2px;
+    height: 15px;
+    border-radius: 50%;
+    left: 20px;
+    background-color:var(--color-Shadow);
+    top: -5px;
+}
+
+
+.header__container_Cart__description{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: -9px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(122, 122, 122, 0.859);
+    border-radius: 10px;
+ }
+
+.header__container_Cart__description::after{
+    position: absolute;
+    content: '';
+    left: 320px;
+    top: -9px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(122, 122, 122, 0.859);
+}
+.header__container_Cart__description::before{
+    position: absolute;
+    content: '';
+    left: 50px;
+    top: -30px;
+    width: 300px; 
+    height: 30px; 
+    background-color: transparent;
+}
+.Cart__description--header{
+    align-items: center;
+    font-size: 1.2rem;
+    margin:10px 10px;
+}
+.Cart__description__item{
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.Cart__description__item--image{
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px var(--color-Shadow)
+}
+.Cart__description__item--title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 0px;
+
+}
+.Cart__description__item--title--header{
+    font-size: 1rem;
+}
+.Cart__description__item--title--small{
+    font-size: 0.6rem;
+    font-weight: 100;
+    
+}
+.Cart__description__item--amount{
+    margin-left: 90px;
+}
+.item__amount__wrapp{
+    display: flex;
+    flex-direction: column;
+   
+}
+.item__amount{
+    display: flex;
+}
+.item__amount__btn{
+    margin: 0px 3px;
+    color: var(--white-color);
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.item__amount__btn:hover{
+    color: var(--primary-Color);
+}
+.item__amount__cost{
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+
+.Cart__description__item:hover{
+    background-color: #36363699;
+}
+.Cart__description__item--sperate{
+    margin-top: 1px;
+    height: 1px;
+    width: 100%;
+    background-color: #bbbbbb99;
+}
+.Cart__description--footer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px 20px;
+}
+.Cart__description--footer--btn{
+    background-color: rgb(15, 175, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--white-color);
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    padding: 2px;
+}
+.Cart__description--footer--btn:hover{
+    border-color: #00000055;
+}
+
+
+
+
+
+
+
+
+
+
 /*Body*/
 .body{
     display: flex;
@@ -437,7 +579,7 @@
 }
 
 .card:hover .content {
-    transform: rotateY(180deg);
+    transform: scale(1.1);
   }
   
   @keyframes rotation_481 {
