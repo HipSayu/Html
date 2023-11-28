@@ -71,6 +71,9 @@ input:focus {
     border-color: #4949493a;
    
 }
+a{
+    text-decoration: none;
+}
 
 /* .sperate {
     margin: 10px;
