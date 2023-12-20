@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Login</title>
 </head>
 <body>
+   
     <div class="box">
-        <div class="container">
+        <form id="form" class="container" enctype="multipart/form-data">
             <div class="top-header">
                 <header>Login</header>
             </div>
             <div class="input-field">
-                <input type="text" class="input" placeholder="Username" required>
+                <label for="Username"></label>
+                <input type="text" id="Username" class="input" placeholder="Username" required>
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
-                <input type="password" class="input" placeholder="Password" required>
+                <label for="Password"></label>
+                <input type="password" id="Password" class="input" placeholder="Password" required>
                 <i class="bx bx-lock-alt"></i>
             </div>
-            <div class="input-field">
-                <input  type="submit" class="submit" value="Login">
-            </div>
+                <button class="btn">Đăng Nhập</button>
             <div class="bottom">
                 <div class="left">
                     <input type="checkbox"  id="check">
@@ -34,7 +35,32 @@
                     <label><a href="#">Forgot password?</a></label>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
+<script>
+
+let form = document.getElementById('form')
+let Username = document.getElementById('Username')
+let Password = document.getElementById('Password')
+    form.addEventListener('submit', async (e)=>{
+        e.preventDefault()
+        let formData = new FormData(form)   
+        let data =Object.fromEntries(formData)
+        console.log(Username.value)
+        console.log(Password.value)
+        await axios.post('http://localhost:1611/Acess',{
+            Username : Username.value,
+            Password :Password.value
+        })
+            .then((res)=> {
+                window.location.href=res.data;
+            })
+        
+    })
+    
+    
+    
+ 
+</script>
 </html>

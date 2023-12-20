@@ -51,6 +51,18 @@ header{
     padding: 0 0 0 42px;
     background: rgba(96, 95, 95, 0.5);
 }
+.btn{
+    cursor: pointer;
+    outline: none;
+    border: 1px solid  rgba(96, 95, 95, 0.5);
+    border-radius: 5px;
+    background-color:  #ffffff5b;
+    height: 40px;
+    font: 1rem #fff;
+}
+.btn:hover{
+    background-color:  #6f6c6c86;
+}
 i{
     position: relative;
     top: -31px;

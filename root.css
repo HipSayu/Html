@@ -66,6 +66,11 @@ body{
     box-shadow: 0 0 3px var(--color-Shadow);
     
 }
+.button__adds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 input:focus { 
     outline: none ;
     border-color: #4949493a;
