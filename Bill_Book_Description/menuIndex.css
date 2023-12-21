@@ -54,7 +54,61 @@
     align-items: center;
     position: relative;
  }
- .header__container_Cart{
+
+ 
+ .header__container_Access--image{
+     border-radius: 50%;
+     height: 50px;
+     width: 50px;
+     
+ }
+ .header__container_Access--image:hover .header__container_Access--description {
+     box-shadow: 0 0 10px var(--color-Shadow);
+     display: block;
+ }
+ .header__container_Access--description{
+     display: none;
+     position: absolute;
+     top: 60px;
+     right: 5px;
+     width: 200px;
+     height: 180px;
+     background-color: rgba(122, 122, 122, 0.859);
+     border-radius: 10px;
+ }
+ .header__container_Access--description::after{
+     position: absolute;
+     content: '';
+     left: 170px;
+     top: -10px;
+     width: 0; 
+     height: 0; 
+     border-left: 10px solid transparent;
+     border-right: 10px solid transparent;
+     border-bottom: 10px solid rgba(122, 122, 122, 0.859);
+ }
+ .header__container_Access--description::before{
+     position: absolute;
+     content: '';
+     left: 9px;
+     top: -30px;
+     width: 200px; 
+     height: 30px; 
+     background-color: transparent;
+ }
+ .header__container_Access--description--item{
+     display: block;
+     margin: 10px;
+     border-bottom: 1px solid var(--white-color);
+     font-size: 1rem;
+     font-weight: 600;
+ }
+ .header__container_Access--description--item:hover{
+     font-size: 1.1rem;
+     cursor: pointer;
+ }
+
+.header__container_Cart{
     position: relative;
     margin-right: 50px;
     font-size: 2rem;
@@ -206,58 +260,13 @@
 
 
 
- 
- .header__container_Access--image{
-     border-radius: 50%;
-     height: 50px;
-     width: 50px;
-     
- }
- .header__container_Access--image:hover .header__container_Access--description {
-     box-shadow: 0 0 10px var(--color-Shadow);
-     display: block;
- }
- .header__container_Access--description{
-     display: none;
-     position: absolute;
-     top: 60px;
-     right: 5px;
-     width: 200px;
-     height: 180px;
-     background-color: rgba(122, 122, 122, 0.859);
-     border-radius: 10px;
- }
- .header__container_Access--description::after{
-     position: absolute;
-     content: '';
-     left: 170px;
-     top: -10px;
-     width: 0; 
-     height: 0; 
-     border-left: 10px solid transparent;
-     border-right: 10px solid transparent;
-     border-bottom: 10px solid rgba(122, 122, 122, 0.859);
- }
- .header__container_Access--description::before{
-     position: absolute;
-     content: '';
-     left: 9px;
-     top: -30px;
-     width: 200px; 
-     height: 30px; 
-     background-color: transparent;
- }
- .header__container_Access--description--item{
-     display: block;
-     margin: 10px;
-     border-bottom: 1px solid var(--white-color);
-     font-size: 1rem;
-     font-weight: 600;
- }
- .header__container_Access--description--item:hover{
-     font-size: 1.1rem;
-     cursor: pointer;
- }
+
+
+
+
+
+
+
 /*Body*/
 .body{
     display: flex;
@@ -343,6 +352,7 @@
     left: 20px;
     width: 90%;
     height: 100%;
+    align-items: center;
 }
 
 
@@ -449,7 +459,158 @@
     margin-top: 30px ;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    
+    height: 1000px;
+
 }
+.body_Wrapper_header{
+    display: flex;
+    flex-direction: row;
+
+}
+.body_Wrapper_header--img{
+    width: 10%;
+}
+.body_Wrapper_header--title{
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+.wrapper_HoaDon_title{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.HoaDon_Title{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.HoaDon_Contents{
+    padding: 0 30px;
+}
+.Time{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Time_title{
+    
+    display: flex;
+    flex-direction: column;
+}
+.Time_Content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.HoaDon_Body__title{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.HoaDon_Body_name_SP{
+    width: 50%;
+    display: flex;
+}
+.HoaDon_Body_SL{
+    width: 10%;
+    display: flex;
+}
+.HoaDon_Body_Cost{
+    width: 20%;
+    display: flex;
+}
+.HoaDon_Body_SumCost{
+    width: 20%;
+    display: flex;
+}
+.Cart__description__item--sperate--dash{
+    margin-top: 1px;
+    border: 1px dashed #bbbbbb99;
+}
+
+
+
+.HoaDon_Body__SP{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.HoaDon_Body__TotalCost{
+    margin-top: 20px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.HoaDon_Body__TotalCost--title{
+    display: flex;
+    flex-direction: column;
+}
+.HoaDon_Body__TotalCost--cost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HoaDon_Body__TotalPayment{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.HoaDon_Body__TotalPayment--Money{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.HoaDon_Body__TotalPayment--QR{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HoaDon_Body__TotalCost--QR{
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper_Payment{
+    margin-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper_Payment__title{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_Payment__cost{
+    display: flex;
+    flex-direction: column;
+}
+.btn_Bill:hover{
+    background-color: #00000055;
+}
+
+
+
+
+
+
+
+
+
+
 
 .body_Wrapper--title{
     display: flex;

@@ -23,7 +23,7 @@
 
               <div class="header__container_Cart">
                   <i class="header__container_Cart--icon fa-solid fa-cart-shopping"></i>
-                  <div class="header__container_Cart__description">
+                  <div class="header__container_Cart__description" style="display: none;">
                     <div class="Cart__description--header" >
                      Hóa Đơn
                     </div>
@@ -48,7 +48,7 @@
                             <span class="item__amount__cost">Cost : 20k</span>
                           </div>
                           </div>
-                          
+
                     </div>
                     <!-- SP -->
                     <div class="Cart__description__item--sperate"></div>
@@ -126,7 +126,7 @@
                   </div>
               </div>
               <div class="header__container_Access--image">
-                  <img class="header__container_Access--image" src="../takina.jpg" alt="">
+                  <img class="header__container_Access--image" src="../Image/9904b891b1ce5e359348de1c4c7e5cb2.jpg" alt="">
                   <div class="header__container_Access--description">
                       <span class="header__container_Access--description--item">Thông tin</span>
                       <span class="header__container_Access--description--item">Tài Khoản</span>
@@ -141,187 +141,233 @@
     <div class="body">
         <div class="body__navbar">
             <div class="body__navbar__container">
-                <div class="body__navbar__container__item ">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
-                </div>
-                <div class="body__navbar__container__item selected">
-                    <i class="fa-solid fa-mug-saucer"></i>
-                    <span>Menu</span>
-                </div>
-                <div class="body__navbar__container__item">
-                    <i class="fa-solid fa-book"></i>
-                    <span>Book</span>
-                </div>
-                <div class="body__navbar__container__item">
-                    <i class="fa-solid fa-note-sticky"></i>
-                    <span>Voucher</span>
-                </div>
-                <div class="body__navbar__container__item">
-                    <i class="fa-solid fa-users"></i>
-                    <span>Customer</span>
-                </div>
-                <div class="body__navbar__container__item">
-                    <i class="fa-solid fa-user"></i>
-                    <span>Employee</span>  
-                </div>
-                <div class="body__navbar__container__item">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span>Account</span>
-                </div>
-                <div class="body__navbar__container__item">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span>Report</span>
-                </div>
+              <a href="../access.html" class="body__navbar__container__item ">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="../Menu/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <span>Menu</span>
+            </a>
+            <a href="../Book_QL/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-book"></i>
+                <span>Book</span>
+            </a>
+            <a href="../Voucher_QL/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-note-sticky"></i>
+                <span>Voucher</span>
+            </a>
+            <a href="../Bill_QL/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-money-check"></i>
+                <span>Bill</span>
+            </a>
+            <a href="../Bill_Book_QL/menuIndex.html" class="body__navbar__container__item selected">
+                <i class="fa-solid fa-book-tanakh"></i>
+                <span>BillBook</span>
+            </a>
+            <a href="../Customer_QL_NV/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-users"></i>
+                <span>Customer</span>
+            </a>
+            <a href="../Employee_QL/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-user"></i>
+                <span>Employee</span>  
+            </a>
+            <a href="../Account_QL/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-address-card"></i>
+                <span>Account</span>
+            </a>
+            <a href="../Report_QL/menuIndex.html" class="body__navbar__container__item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Report</span>
+            </a>
                 
             </div>
         </div>
         <div class="body__container">
             <div class="body_Wrapper">  
-              <div class="body_Wrapper_header">
+              <!-- <div class="body_Wrapper_header">
                 <img class="body_Wrapper_header--img" src="../3214881.png" alt="Cafe">
                 <span class="body_Wrapper_header--title">Cafe Sách</span>
-              </div>
+              </div> -->
               <div class="Cart__description__item--sperate"></div>
               <div class="wrapper_HoaDon_title">
-                <h1 class="HoaDon_Title">Hóa đơn thanh toán</h1>
+                <h1 class="HoaDon_Title">Hóa đơn Book</h1>
+              </div>
+              <div class="SearchHD">
+
+                <label class="SearchHD__label"  for="ID">ID</label>
+                <input class="SearchHD__Input" type="text" name="" id="ID">
+                
+                <label class="SearchHD__label" for="NV"> NV</label>
+                <input class="SearchHD__Input" type="text" name="" id="NV">
+
+                <label class="SearchHD__label" for="Time"> Sách</label>
+                <input class="SearchHD__Input" type="text" name="" id="Time">
+
+                <label class="SearchHD__label" for="day"> Ngày</label>
+                <input class="SearchHD__Input" type="text" name="" id="day">
+
+                <label class="SearchHD__label" for="day"> Tên Khách Hàng</label>
+                <input class="SearchHD__Input" type="text" name="" id="day">
+
+                <button class="btn_Search">Search</button>
               </div>
               <div class="HoaDon_Contents">
-                <div class="Time">
-                  <div class="Time_title">
-                    <span>ID</span>
-                    <span>Time</span>
-                    <span>Nhân Viên</span>
-                    <span>Khách Hàng</span>
-                  </div>
-                  <div class="Time_Content">
-                    <span>HD80</span>
-                    <span>12:30:30 16-11-2023</span>
-                    <span>Trần Hồng Ngát 0123456</span>
-                    <input type="text"></input>
-                  </div>
-                </div>
                 <div class="HoaDon_Body__title">
                   <div class="HoaDon_Body_name_SP">
-                    Name
+                    ID
                   </div>
-                  <div class="HoaDon_Body_SL">
-                    SL
+                  <div class="HoaDon_Body_Time">
+                    Tên Sách
                   </div>
-                  <div class="HoaDon_Body_Cost">
-                    Đơn Giá
+                  <div class="HoaDon_Body_Day">
+                   Ngày
+                  </div>
+                  <div class="HoaDon_Body_NV">
+                    Nhân Viên
                   </div>
                   <div class="HoaDon_Body_SumCost">
-                    Thành Tiền
+                   Khách Hàng
+                  </div>
+                  <div class="HoaDon_Body_Action">
                   </div>
                 </div>
                 <div class="Cart__description__item--sperate--dash"></div>
                 <!-- Sản Phẩm -->
                 <div class="HoaDon_Body__SP">
                   <div class="HoaDon_Body_name_SP">
-                    Cafe G7 Trung Nguyên
+                    HDB80
                   </div>
-                  <div class="HoaDon_Body_SL">
-                    2
+                  <div class="HoaDon_Body_Time">
+                    Being in Love
                   </div>
-                  <div class="HoaDon_Body_Cost">
-                    20k
+                  <div class="HoaDon_Body_Day">
+                    16-11-2023
                   </div>
-                  <div class="HoaDon_Body_SumCost">
-                    40k
-                  </div>
-                </div>
-                <!-- Sản Phẩm -->
-                <div class="HoaDon_Body__SP">
-                  <div class="HoaDon_Body_name_SP">
-                    Bạc Xỉu Trung Nguyên
-                  </div>
-                  <div class="HoaDon_Body_SL">
-                    1
-                  </div>
-                  <div class="HoaDon_Body_Cost">
-                    10k
+                  <div class="HoaDon_Body_NV">
+                   Trần Hồng Ngát
                   </div>
                   <div class="HoaDon_Body_SumCost">
-                    10k
+                    Trần Hồng Phát
                   </div>
-                </div>
-                <!-- Sản Phẩm -->
-                <div class="HoaDon_Body__SP">
-                  <div class="HoaDon_Body_name_SP">
-                    Cà phê Sữa 
-                  </div>
-                  <div class="HoaDon_Body_SL">
-                    1
-                  </div>
-                  <div class="HoaDon_Body_Cost">
-                    10k
-                  </div>
-                  <div class="HoaDon_Body_SumCost">
-                    10k
-                  </div>
-                </div>
-                <!-- Sản Phẩm -->
-                <div class="HoaDon_Body__SP">
-                  <div class="HoaDon_Body_name_SP">
-                   Capuchino 
-                  </div>
-                  <div class="HoaDon_Body_SL">
-                    1
-                  </div>
-                  <div class="HoaDon_Body_Cost">
-                    10k
-                  </div>
-                  <div class="HoaDon_Body_SumCost">
-                    10k
-                  </div>
-                </div>
-                <div class="HoaDon_Body__SP">
-                  <div class="HoaDon_Body_name_SP">
-                   <input type="text" name="Voucher" id="Voucher" placeholder="Voucher" > 
-                  </div>
-                  <div class="HoaDon_Body_SL">
-                    
-                  </div>
-                  <div class="HoaDon_Body_Cost">
-                    
-                  </div>
-                  <div class="HoaDon_Body_SumCost">
-                    
+                  <div class="HoaDon_Body_Action">
+                    <a href="../Bill_Book_Description/menuIndex.html" class="btn_Action">Xem</a>
+                    <button class="btn_Action">Xóa</button>
+                    <button class="btn_Action">Sửa</button>
                   </div>
                 </div>
                 <div class="Cart__description__item--sperate--dash"></div>
-                <div class="HoaDon_Body__TotalCost">
-                  <div class="HoaDon_Body__TotalCost--title">
-                    <span>Tổng Tiền</span>
+                <!-- Sản Phẩm -->
+                <div class="HoaDon_Body__SP">
+                  <div class="HoaDon_Body_name_SP">
+                    HDB81
                   </div>
-                  <div class="HoaDon_Body__TotalCost--cost">
-                    <span>68K</span>
+                  <div class="HoaDon_Body_Time">
+                    Tôi Thấy Hoa Vàng Trên Cỏ Xanh
+                  </div>
+                  <div class="HoaDon_Body_Day">
+                    16-11-2023
+                  </div>
+                  <div class="HoaDon_Body_NV">
+                   Trần Hồng Ngát
+                  </div>
+                  <div class="HoaDon_Body_SumCost">
+                    Đỗ Xuân Thanh
+                  </div>
+                  <div class="HoaDon_Body_Action">
+                    <a href="../Bill_Description/menuIndex.html" class="btn_Action">Xem</a>
+                    <button class="btn_Action">Xóa</button>
+                    <button class="btn_Action">Sửa</button>
                   </div>
                 </div>
                 <div class="Cart__description__item--sperate--dash"></div>
-                <div class="HoaDon_Body__TotalPayment">
-                  <div class="HoaDon_Body__TotalPayment--Money">
-                    <span>Tiền Mặt</span>
-                    <div class="Cart__description__item--sperate--dash"></div>
-                    <div class="wrapper_Payment">
-                      <div class="wrapper_Payment__title">
-                        <span >Tiền Khách Đưa:</span>
-                        <span>Tiền thừa trả lại:</span>
-                      </div>
-                      <div class="wrapper_Payment__cost">
-                        <input type="text" style="width: 40px;">
-                        <span>...</span>
-                      </div>
-                    </div>
-                    <Button class="btn_Bill">In Hóa Đơn</Button>
+                <!-- Sản Phẩm -->
+                <div class="HoaDon_Body__SP">
+                  <div class="HoaDon_Body_name_SP">
+                    HDB88
                   </div>
-                  <div class="HoaDon_Body__TotalPayment--QR">
-                    <span>QR</span>
-                    <img class="HoaDon_Body__TotalCost--QR" src="../QR.png" alt="">
+                  <div class="HoaDon_Body_Time">
+                    300 Bài code thiếu nhi
+                  </div>
+                  <div class="HoaDon_Body_Day">
+                    16-11-2023
+                  </div>
+                  <div class="HoaDon_Body_NV">
+                   Trần Hồng Ngát
+                  </div>
+                  <div class="HoaDon_Body_SumCost">
+                    Đỗ Hồng Phát Thanh
+                  </div>
+                  <div class="HoaDon_Body_Action">
+                    <a href="../Bill_Description/menuIndex.html" class="btn_Action">Xem</a>
+                    <button class="btn_Action">Xóa</button>
+                    <button class="btn_Action">Sửa</button>
                   </div>
                 </div>
+                <div class="Cart__description__item--sperate--dash"></div>
+                <!-- Sản Phẩm -->
+                <div class="HoaDon_Body__SP">
+                  <div class="HoaDon_Body_name_SP">
+                    HDB89
+                  </div>
+                  <div class="HoaDon_Body_Time">
+                    300 Bài code thiếu nhi
+                  </div>
+                  <div class="HoaDon_Body_Day">
+                    16-11-2023
+                  </div>
+                  <div class="HoaDon_Body_NV">
+                   Trần Hồng Ngát
+                  </div>
+                  <div class="HoaDon_Body_SumCost">
+                    Đỗ Hồng Phát Thanh
+                  </div>
+                  <div class="HoaDon_Body_Action">
+                    <a href="../Bill_Description/menuIndex.html" class="btn_Action">Xem</a>
+                    <button class="btn_Action">Xóa</button>
+                    <button class="btn_Action">Sửa</button>
+                  </div>
+                </div>
+                <div class="Cart__description__item--sperate--dash"></div>
+                <!-- Sản Phẩm -->
+                <div class="HoaDon_Body__SP">
+                  <div class="HoaDon_Body_name_SP">
+                    HDB90
+                  </div>
+                  <div class="HoaDon_Body_Time">
+                    300 Bài code thiếu nhi
+                  </div>
+                  <div class="HoaDon_Body_Day">
+                    16-11-2023
+                  </div>
+                  <div class="HoaDon_Body_NV">
+                   Trần Hồng Ngát
+                  </div>
+                  <div class="HoaDon_Body_SumCost">
+                    Đỗ Hồng Phát Thanh
+                  </div>
+                  <div class="HoaDon_Body_Action">
+                    <a href="../Bill_Description/menuIndex.html" class="btn_Action">Xem</a>
+                    <button class="btn_Action">Xóa</button>
+                    <button class="btn_Action">Sửa</button>
+                  </div>
+                </div>
+                <div class="Cart__description__item--sperate--dash"></div>
+                <!-- Sản Phẩm -->
+               
+
               </div>
+              <div class="body__page">
+              <div class="body__page--item"><</div>
+              <div class="body__page--item">1</div>
+              <div class="body__page--item pageSelected">2</div>
+              <div class="body__page--item">3</div>
+              <div class="body__page--item">4</div>
+              <div class="body__page--item">...</div>
+              <div class="body__page--item">20</div>
+              <div class="body__page--item">></div>
+            </div>
             </div>
         </div>
     </div>
